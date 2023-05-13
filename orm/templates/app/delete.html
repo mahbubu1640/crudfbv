@@ -1,0 +1,11 @@
+{% extends "app/base.html"%}
+  {%block body_block%}
+  <div class="container">
+    <div align="center">
+        <h2>Are You Sure You Want To Delete {{employee.ename}}</h2>
+        <input type="text" value="Delete">
+        <a href="detail/{{employee.id}}" >Cancel</a>
+</div>
+</div>
+
+  {%endblock%}

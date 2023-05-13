@@ -1,0 +1,16 @@
+{% extends "app/base.html"%}
+  {%block body_block%}
+  <div class="container">
+    <div align="center">
+        <h2>Please enter your login credentials to access your account and unlock a world of possibilities.
+        </h2>
+        <form action="" method="post">
+            {{form.as_p}}
+            {%csrf_token%}
+            <input type="submit" value="Login">
+        </form>
+    </table> 
+</div>
+</div>
+
+  {%endblock%}

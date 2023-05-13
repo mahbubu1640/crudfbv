@@ -1,0 +1,17 @@
+{% extends "app/base.html"%}
+  {%block body_block%}
+  <div class="container">
+    <div align="center">
+        <h2>Welcome! Complete your registration and get started </h2>
+       <p>Thank you for choosing us. We're excited to have you on board. To complete your registration and gain access to our platform, please follow the steps below</p> 
+       <hr>
+       <div align="left">
+       <form method="post">
+        {{form.as_p}}
+        {%csrf_token%}
+        <input type="submit" value="Signup" class="btn btn-primary btn-success">
+</form>
+        </div>
+</div>
+</div>
+  {%endblock%}
